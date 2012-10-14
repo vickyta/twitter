@@ -1,0 +1,18 @@
+<div>
+	<h3>Busqueda de Tweets</h3>
+</div>
+<form class="form-horizontal" method="post" action="<%= busqueda_path %>">
+    <fieldset>
+        <div class="control-group">
+            <label class="control-label">Ingrese texto a buscar</label>
+            <div class="controls">
+                <input class="input-xlarge" type="text" name="busqueda[word]">
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+                Buscar
+            </button>
+        </div>
+    </fieldset>
+</form>
