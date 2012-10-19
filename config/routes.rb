@@ -3,7 +3,7 @@ Twitter::Application.routes.draw do
 
   # Rutas para la busqueda de tweets
   match "index" => "twitter#index", :as => :index, :via => :get
-  match "index" => "twitter#busqueda", :as => :busqueda, :via => :post
+  #match "index" => "twitter#busqueda", :as => :busqueda, :via => :post
   
   match "tweets" => "twitter#tweets", :as => :tweets, :via => :get
   match "tweets" => "twitter#guardar", :as => :guardar, :via => :post
