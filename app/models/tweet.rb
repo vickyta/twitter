@@ -5,9 +5,8 @@ class Tweet
 
 	property :id, 			Serial
 	property :user_name, 	String
-	property :text, 	 	String
-	property :image, 		String
-	property :date,		 	DateTime
+	property :text, 	 	String, :length => 200
+	property :image, 		String, :length => 200
 
 	belongs_to :palabra
 
